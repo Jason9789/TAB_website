@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { readPost, unloadPost } from '../../modules/post';
-import PostViewer from '../../components/posts/PostViewer';
+import PostViewer from '../../components/post/PostViewer';
+import PostActionButtons from '../../components/post/PostActionButton';
 
 const PostViewerContainer = ({ match }) => {
   // 처음 마운트될 때 포스트 읽기 API 요청
@@ -22,7 +23,14 @@ const PostViewerContainer = ({ match }) => {
     };
   }, [dispatch, postId]);
 
-  return <PostViewer post={post} loading={loading} error={error} />;
+  return (
+    <PostViewer
+      post={post}
+      loading={loading}
+      error={error}
+      actionButtons={<PostActionButtons />}
+    />
+  );
 };
 
 export default withRouter(PostViewerContainer);
