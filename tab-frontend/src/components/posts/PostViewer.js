@@ -71,7 +71,7 @@ const PostViewer = ({ post, error, loading }) => {
       <PostHead>
         <h1>{title}</h1>
         <SubInfo
-          usename={user.username}
+          username={user.username}
           publishedDate={publishedDate}
           hasMarginTop
         />
