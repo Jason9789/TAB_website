@@ -20,32 +20,6 @@ const PostHead = styled.div`
   }
 `;
 
-// const SubInfo = styled.div`
-//   margin-top: 1rem;
-//   color: ${palette.gray[6]};
-
-//   /* span 사이에 가운뎃점 문자 보여 주기 */
-//   span+span: before {
-//     color: ${palette.gray[5]};
-//     padding-left: 0.25rem;
-//     padding-right: 0.25rem;
-//     content: '\\B7'; /* 가운뎃점 문자 */
-//   }
-// `;
-
-// const Tags = styled.div`
-//   margin-top: 0.5rem;
-//   .tag {
-//     display: inline-block;
-//     color: ${palette.cyan[7]};
-//     text-decoration: none;
-//     margin-right: 0.5rem;
-//     &:hover {
-//       color: ${palette.cyan[6]};
-//     }
-//   }
-// `;
-
 const PostContent = styled.div`
   font-size: 1.3125rem;
   color: ${palette.gray[8]};

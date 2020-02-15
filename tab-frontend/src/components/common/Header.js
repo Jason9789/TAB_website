@@ -48,6 +48,9 @@ const Header = ({ user, onLogout }) => {
       <HeaderBlock>
         <Wrapper>
           <Link to="/" className="logo">
+            메뉴
+          </Link>
+          <Link to="/main" className="logo">
             TAB
           </Link>
           {user ? (

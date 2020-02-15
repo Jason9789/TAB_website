@@ -5,6 +5,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import WritePage from './pages/WritePage';
 import PostPage from './pages/PostPage';
+import MainPage from './pages/MainPage';
 import { Helmet } from 'react-helmet-async';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Helmet>
         <title>TAB</title>
       </Helmet>
+      <Route component={MainPage} path="/main" />
       <Route component={PostListPage} path={['/@:username', '/']} exact />
       <Route component={LoginPage} path="/login" />
       <Route component={RegisterPage} path="/register" />
