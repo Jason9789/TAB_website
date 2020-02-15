@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import Responsive from './Responsive';
 
 const FooterBlock = styled.div`
-  position: fixed;
+  position: absolute;
+  // bottom: 0;
   width: 100%;
   background: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08) inset;
@@ -29,9 +30,17 @@ const Wrapper = styled(Responsive)`
   }
 `;
 
+/**
+ * Footer가 fixed로 되어 있기 때문에 페이지의 콘텐츠가 4rem 위에 나타나도록 해 주는 컴포넌트
+ */
+const Spacer = styled.div`
+  height: 4rem;
+`;
+
 const Footer = () => {
   return (
     <>
+      <Spacer />
       <FooterBlock>
         <Wrapper>
           <p className="logo">
@@ -40,13 +49,12 @@ const Footer = () => {
               <b> PanGeun Jeon</b>
             </a>
             <br />
-            with Node.js Koa.js React.js
+            with Node.js React.js
             <br />
             HUFS CES TAB
           </p>
         </Wrapper>
       </FooterBlock>
-      {/* <Spacer /> */}
     </>
   );
 };
