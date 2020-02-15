@@ -46,6 +46,11 @@ const Header = ({ user, onLogout }) => {
   return (
     <>
       <HeaderBlock>
+        {/* <Wrapper>
+          <Link to="/main" className="logo">
+            TAB
+          </Link>
+        </Wrapper> */}
         <Wrapper>
           <Link to="/" className="logo">
             메뉴

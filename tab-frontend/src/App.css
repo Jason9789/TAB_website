@@ -61,6 +61,7 @@ h2 {
   align-items: center;
   width: 100%;
   margin: 0;
+  /* flex-direction: row; */
 }
 .content-box {
   display: flex;
@@ -73,6 +74,7 @@ h2 {
   margin: 20px 10px;
   padding: 10px;
   transition: 0.5s;
+  /* flex-direction: row; */
 }
 .content-img {
   max-width: 150px;

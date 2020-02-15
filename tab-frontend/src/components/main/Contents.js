@@ -17,9 +17,10 @@ const Contents = props => {
       style={{ backgroundColor: bgColor }}
     >
       <h1>{props.contentsName}</h1>
+      <hr />
       <div className="content-box">
-        {props.items.map(item => {
-          return <Content detail={item} />;
+        {props.items.map((item, index) => {
+          return <Content detail={item} key={index} />;
         })}
       </div>
     </div>
@@ -31,9 +32,9 @@ const Content = props => {
   if (props.detail.length === 4) detail_3 = props.detail[3];
   return (
     <div className="content">
-      <img className="content-img" src={props.detail[1]} alt="content img" />
-      <h2>{props.detail[0]}</h2>
-      <p className="content-detail">{props.detail[2]}</p>
+      <img className="content-img" src={props.detail.svg} alt="content img" />
+      <h2>{props.detail.title}</h2>
+      <p className="content-detail">{props.detail.description}</p>
       {detail_3}
     </div>
   );
