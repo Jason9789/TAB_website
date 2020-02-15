@@ -6,6 +6,8 @@ import { Helmet } from 'react-helmet-async';
 
 import Contents from './Contents';
 
+import '../../App.css';
+
 // 이미지
 import study from '../../images/study.svg';
 import tent from '../../images/tent.svg';
@@ -76,17 +78,13 @@ const MainHome = () => {
         }}
       />
 
-      {/* Annul Event */}
-      {/* <PostHead>
+      {/* 연간 행사 */}
+      <PostHead>
         <h1>Annul Event</h1>
       </PostHead>
       <MainHomeContent>
-        <Contents
-          id="annual_events"
-          // contentsName="ANNUAL EVENTS"
-          items={annual_events}
-        />
-      </MainHomeContent> */}
+        <Contents id="annual_events" items={annual_events} />
+      </MainHomeContent>
       <PostHead>
         <h1>Apply</h1>
       </PostHead>

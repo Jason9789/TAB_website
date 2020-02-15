@@ -17,7 +17,6 @@ const Contents = props => {
       style={{ backgroundColor: bgColor }}
     >
       <h1>{props.contentsName}</h1>
-      <hr />
       <div className="content-box">
         {props.items.map(item => {
           return <Content detail={item} />;
