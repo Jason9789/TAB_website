@@ -1,15 +1,15 @@
 import React from 'react';
 
-let cnt = 0;
+// let cnt = 0;
 let bgColor = '';
 
 const Contents = props => {
-  cnt += 1;
-  if (cnt % 2 === 0) {
-    bgColor = '#ddd';
-  } else {
-    bgColor = 'white';
-  }
+  // cnt += 1;
+  // if (cnt % 2 === 0) {
+  //   bgColor = '#ddd';
+  // } else {
+  //   bgColor = 'white';
+  // }
   return (
     <div
       id={props.id}
@@ -28,14 +28,14 @@ const Contents = props => {
 };
 
 const Content = props => {
-  let detail_3 = '';
-  if (props.detail.length === 4) detail_3 = props.detail[3];
+  // let detail_3 = '';
+  // if (props.detail.length === 4) detail_3 = props.detail[3];
   return (
     <div className="content">
       <img className="content-img" src={props.detail.svg} alt="content img" />
       <h2>{props.detail.title}</h2>
       <p className="content-detail">{props.detail.description}</p>
-      {detail_3}
+      {/* {detail_3} */}
     </div>
   );
 };
