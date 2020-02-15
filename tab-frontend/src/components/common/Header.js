@@ -4,6 +4,8 @@ import Responsive from './Responsive';
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
+import '../../App.css';
+
 const HeaderBlock = styled.div`
   position: fixed;
   width: 100%;
@@ -52,9 +54,34 @@ const Header = ({ user, onLogout }) => {
           </Link>
         </Wrapper> */}
         <Wrapper>
-          <Link to="/" className="logo">
+          {/* <Link to="/" className="logo">
             메뉴
-          </Link>
+          </Link> */}
+          {/* <nav role="navigation"> */}
+          <div id="menuToggle" className="logo">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <Link to="/main">
+                <li>Home</li>
+              </Link>
+              <Link to="/">
+                <li>공지사항</li>
+              </Link>
+              <Link to="/">
+                <li>게시판</li>
+              </Link>
+              <Link to="/">
+                <li>Contact</li>
+              </Link>
+              <a href="https://github.com/Jason9789/TAB_website">
+                <li>Show me more</li>
+              </a>
+            </ul>
+          </div>
+          {/* </nav> */}
           <Link to="/main" className="logo">
             TAB
           </Link>
