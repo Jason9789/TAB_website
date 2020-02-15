@@ -86,7 +86,7 @@ h2 {
   .content-box {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     /* width: 20%; */
   }
@@ -176,7 +176,7 @@ h2 {
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: black;
   border-radius: 3px;
 
   z-index: 1;
