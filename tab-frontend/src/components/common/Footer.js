@@ -29,13 +29,6 @@ const Wrapper = styled(Responsive)`
   }
 `;
 
-/**
- * 헤더가 fixed로 되어 있기 때문에 페이지의 콘텐츠가 4rem 아래에 나타나도록 해 주는 컴포넌트
- */
-const Spacer = styled.div`
-  height: 4rem;
-`;
-
 const Footer = () => {
   return (
     <>
@@ -48,6 +41,8 @@ const Footer = () => {
             </a>
             <br />
             with Node.js Koa.js React.js
+            <br />
+            HUFS CES TAB
           </p>
         </Wrapper>
       </FooterBlock>
