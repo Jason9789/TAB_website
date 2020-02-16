@@ -12,7 +12,7 @@ export const listPosts = ({ page, username, tag }) => {
     username,
     tag,
   });
-  return client.get(`/api/posts/${queryString}`);
+  return client.get(`/api/posts?${queryString}`);
 };
 
 export const updatePost = ({ id, title, body, tags }) =>

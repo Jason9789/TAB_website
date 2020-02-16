@@ -25,7 +25,7 @@ const PostContent = styled.div`
   color: ${palette.gray[8]};
 `;
 
-const PostViewer = ({ post, error, loading, actionButtons }) => {
+const PostViewer = ({ post, error, loading, actionButtons, ownPost }) => {
   // 에러 발생 시
   if (error) {
     if (error.response && error.response.status === 404) {
@@ -34,18 +34,18 @@ const PostViewer = ({ post, error, loading, actionButtons }) => {
     return <PostViewerBlock>오류 발생!</PostViewerBlock>;
   }
 
-  // 로딩 중이거나 아직 포스트 데이터가 없을 때
+  // 로딩중이거나, 아직 포스트 데이터가 없을 시
   if (loading || !post) {
     return null;
   }
 
   const { title, body, user, publishedDate, tags } = post;
-
   return (
     <PostViewerBlock>
       <Helmet>
-        <title>{title} - TAB</title>
+        <title>{title} - REACTERS</title>
       </Helmet>
+
       <PostHead>
         <h1>{title}</h1>
         <SubInfo
