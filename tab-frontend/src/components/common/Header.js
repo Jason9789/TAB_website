@@ -71,13 +71,13 @@ const Header = ({ user, onLogout }) => {
                 <li>공지사항</li>
               </Link>
               <Link to="/">
-                <li>게시판</li>
+                <li>학회 활동</li>
               </Link>
               <Link to="/">
-                <li>Contact</li>
+                <li>Q&A</li>
               </Link>
-              <a href="https://github.com/Jason9789/TAB_website">
-                <li>Show me more</li>
+              <a href="/">
+                <li>Calendar</li>
               </a>
             </ul>
           </div>
