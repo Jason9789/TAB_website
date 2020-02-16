@@ -70,7 +70,7 @@ const Header = ({ user, onLogout }) => {
               <Link to="/">
                 <li>공지사항</li>
               </Link>
-              <Link to="/">
+              <Link to="/session">
                 <li>학회 활동</li>
               </Link>
               <Link to="/">
