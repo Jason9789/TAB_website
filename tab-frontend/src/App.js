@@ -7,6 +7,7 @@ import WritePage from './pages/WritePage';
 import PostPage from './pages/PostPage';
 import MainPage from './pages/MainPage';
 import Session from './pages/SessionPage';
+import CalendarPage from './pages/CalendarPage';
 import { Helmet } from 'react-helmet-async';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
       <Route component={RegisterPage} path="/register" />
       <Route component={WritePage} path="/write" />
       <Route component={PostPage} path="/@:username/:postId" />
+      <Route component={CalendarPage} path="/calendar" />
     </>
   );
 };
