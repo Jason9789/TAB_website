@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeaderContainer from '../containers/common/HeaderContainer';
+// import Calendar from '../components/calendar/Calendar';
 // import Calendar from 'react-calendar';
 import '../components/calendar/Calendar.scss';
 import styled from 'styled-components';
@@ -23,6 +24,7 @@ class MainPage extends Component {
         {/* <div>Calendar Page TEST</div> */}
         <CalendarBlock>
           <Calendar className="react-calendar" />
+          {/* <Calendar /> */}
         </CalendarBlock>
         <Footer />
       </>
