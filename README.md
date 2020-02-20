@@ -18,3 +18,9 @@
 - **Back-end** : Node.js (Koa.js)
 - **DataBase** : MongoDB (mongoose) with Docker
 - **server** : **_aws or gcp 예정 ~~(아직 결정하지 못함)_**
+
+## localhost
+
+- **react** : http://localhost:3000/
+- **node** : http://localhost:4000/
+- **mongoDB** : mongodb://127.0.0.1:27017/
