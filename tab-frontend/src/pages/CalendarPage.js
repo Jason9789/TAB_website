@@ -8,7 +8,11 @@ import Calendar from 'react-calendar/dist/entry.nostyle';
 import Footer from '../components/common/Footer';
 
 const CalendarBlock = styled.div`
-  margin-top: 4rem;
+  padding-top: 4rem;
+  position: flex;
+  width: 60%;
+  height: 60%;
+  margin: auto;
 `;
 class MainPage extends Component {
   //   state = {

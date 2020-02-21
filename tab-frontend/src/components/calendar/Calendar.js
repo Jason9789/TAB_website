@@ -99,9 +99,9 @@
 import React from 'react';
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
-import "react-big-calendar/lib/css/react-big-calendar.css";
+import 'react-big-calendar/lib/css/react-big-calendar.css';
 
-moment.locale("en-GB");
+moment.locale('en-GB');
 BigCalendar.momentLocalizer(moment);
 
 /**
@@ -112,29 +112,29 @@ BigCalendar.momentLocalizer(moment);
  * monthIndex는 0부터 시작합니다. 0은 1월을 의미하고, 11은 12월을 의미
  */
 
- const Calendar = () => {
-     <div style={{ height: 500 }}>
-         <BigCalendar
-         events={[
-             title: "2.20 출근",
-             allDay: false,
-             start: new Date(2020, 1, 20, 10, 0),   // 10.00 AM
-             end: new Date(2020, 1, 20, 10, 30)     // 2.00 PM
-         ],
-        [
-            title: "2.00 퇴근",
-            allDay: false,
-             start: new Date(2020, 1, 20, 17, 30),   // 10.00 AM
-             end: new Date(2020, 1, 20, 17, 40)     // 2.00 PM
-        ]}
-        step={60}
-        view="month"
-        views={["month"]}
-        min={new Date(2008, 0, 1, 8, 0)}
-        max={new Date(2008, 0, 1, 17, 0)}
-        date={new Date(2020, 1, 20)}
-        />
-     </div>
- }
- 
- export default Calendar;
+const Calendar = () => {
+  <div style={{ height: 500 }}>
+    <BigCalendar
+      //  events={[
+      //      title: "2.20 출근",
+      //      allDay: false,
+      //      start: new Date(2020, 1, 20, 10, 0),   // 10.00 AM
+      //      end: new Date(2020, 1, 20, 10, 30)     // 2.00 PM
+      //  ],
+      // [
+      //     title: "2.00 퇴근",
+      //     allDay: false,
+      //      start: new Date(2020, 1, 20, 17, 30),   // 10.00 AM
+      //      end: new Date(2020, 1, 20, 17, 40)     // 2.00 PM
+      // ]}
+      step={60}
+      view="month"
+      views={['month']}
+      min={new Date(2008, 0, 1, 8, 0)}
+      max={new Date(2008, 0, 1, 17, 0)}
+      date={new Date(2020, 1, 20)}
+    />
+  </div>;
+};
+
+export default Calendar;
