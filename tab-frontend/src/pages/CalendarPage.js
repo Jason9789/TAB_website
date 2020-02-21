@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import HeaderContainer from '../containers/common/HeaderContainer';
 // import Calendar from '../components/calendar/Calendar';
-// import Calendar from 'react-calendar';
+import Calendar from 'react-calendar';
 import '../components/calendar/Calendar.scss';
 import styled from 'styled-components';
-import Calendar from 'react-calendar/dist/entry.nostyle';
+// import Calendar from 'react-calendar/dist/entry.nostyle';
+// import 'react-calendar/dist/Calendar.css';
 import Footer from '../components/common/Footer';
 
 const CalendarBlock = styled.div`
   padding-top: 4rem;
-  position: flex;
-  width: 60%;
-  height: 60%;
-  margin: auto;
 `;
 class MainPage extends Component {
   //   state = {
