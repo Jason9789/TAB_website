@@ -1,4 +1,4 @@
-# TAB_website
+# :mortar_board:한국외국어대학교 학회 TAB 홈페이지:mortar_board:
 
 # [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react)
 
@@ -24,3 +24,7 @@
 - **react** : http://localhost:3000/
 - **node** : http://localhost:4000/
 - **mongoDB** : mongodb://127.0.0.1:27017/
+
+## 문의
+
+- **e-mail** : <lifebook0809@gmail.com>
