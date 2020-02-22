@@ -13,7 +13,7 @@ const posts = [
  * 포스트 작성
  * POST /api/qna
  */
-exports.write = ctx => {
+export const write = ctx => {
   const { title, body } = ctx.request.body;
   postId += 1; // 기존 postId 값에 1을 더함
   const post = { id: postId, title, body };
@@ -25,7 +25,7 @@ exports.write = ctx => {
  * 포스트 목록 조회
  * GET /api/qna
  */
-exports.list = ctx => {
+export const list = ctx => {
   ctx.body = posts;
 };
 
@@ -33,7 +33,7 @@ exports.list = ctx => {
  * 특정 포스트 조회
  * GET /api/qna/:id
  */
-exports.read = ctx => {
+export const read = ctx => {
   const { id } = ctx.params;
   const post = posts.find(p => p.id.toString() === id);
   if (!post) {
@@ -50,7 +50,7 @@ exports.read = ctx => {
  * 특정 포스트 제거
  * DELETE / api/qna/:id
  */
-exports.remove = ctx => {
+export const remove = ctx => {
   const { id } = ctx.params;
   const index = posts.findIndex(p => p.id.toString() === id);
   if (index === -1) {
@@ -68,7 +68,7 @@ exports.remove = ctx => {
  * 포스트 수정
  * { title, body }
  */
-exports.replace = ctx => {
+export const replace = ctx => {
   const { id } = ctx.params;
   const index = posts.findIndex(p => p.id.toString() === id);
   if (index === -1) {
@@ -89,7 +89,7 @@ exports.replace = ctx => {
  * 포스트 수정
  * PATCH /api/qna/:id
  */
-exports.update = ctx => {
+export const update = ctx => {
   const { id } = ctx.params;
   const index = posts.findIndex(p => p.id.toString() === id);
   if (index === -1) {

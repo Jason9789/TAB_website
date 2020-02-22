@@ -1,5 +1,5 @@
-const Router = require('koa-router');
-const postsQnaCtrl = require('./postsQna.ctrl');
+import Router from 'koa-router';
+import * as postsQnaCtrl from './postsQna.ctrl';
 
 const postsQna = new Router();
 
@@ -10,4 +10,4 @@ postsQna.delete('/:id', postsQnaCtrl.remove);
 postsQna.put('/:id', postsQnaCtrl.replace);
 postsQna.patch('/:id', postsQnaCtrl.update);
 
-module.exports = postsQna;
+export default postsQna;
