@@ -5,8 +5,12 @@ const postsQna = new Router();
 
 postsQna.get('/', postsQnaCtrl.list);
 postsQna.post('/', postsQnaCtrl.write);
-postsQna.get('/:id', postsQnaCtrl.read);
-postsQna.delete('/:id', postsQnaCtrl.remove);
-postsQna.patch('/:id', postsQnaCtrl.update);
+
+const qna = new Router(); // /api/qna/:id
+qna.get('/', postsQnaCtrl.read);
+qna.delete('/', postsQnaCtrl.remove);
+qna.patch('/', postsQnaCtrl.update);
+
+postsQna.use('/:id', postsQnaCtrl.checkObjectId, qna.routes());
 
 export default postsQna;
