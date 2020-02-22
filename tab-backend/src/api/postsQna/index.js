@@ -1,16 +1,17 @@
 import Router from 'koa-router';
 import * as postsQnaCtrl from './postsQna.ctrl';
+import checkLoggedIn from '../../lib/checkLoggedIn';
 
 const postsQna = new Router();
 
 postsQna.get('/', postsQnaCtrl.list);
-postsQna.post('/', postsQnaCtrl.write);
+postsQna.post('/', checkLoggedIn, postsQnaCtrl.write);
 
 const qna = new Router(); // /api/qna/:id
 qna.get('/', postsQnaCtrl.read);
-qna.delete('/', postsQnaCtrl.remove);
-qna.patch('/', postsQnaCtrl.update);
+qna.delete('/', checkLoggedIn, postsQnaCtrl.checkOwnPost, postsQnaCtrl.remove);
+qna.patch('/', checkLoggedIn, postsQnaCtrl.checkOwnPost, postsQnaCtrl.update);
 
-postsQna.use('/:id', postsQnaCtrl.checkObjectId, qna.routes());
+postsQna.use('/:id', postsQnaCtrl.getPostById, qna.routes());
 
 export default postsQna;
