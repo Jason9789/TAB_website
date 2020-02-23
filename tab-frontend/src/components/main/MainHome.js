@@ -18,10 +18,10 @@ import job from '../../images/job.png';
 import army from '../../images/swSoldier.png';
 import hackathon from '../../images/hackathon.png';
 import contest from '../../images/whale.png';
-// import acm from '../../images/acm.png';
-// import gcp from '../../images/gcpug.png';
-// import hanium from '../../images/hanium.png';
-// import hufo from '../../images/huformation.png';
+import acm from '../../images/acm.png';
+import gcp from '../../images/gcpug.png';
+import hanium from '../../images/hanium.png';
+import hufo from '../../images/huformation.png';
 
 const MainHomeBlock = styled(Responsive)`
   margin-top: 4rem;
@@ -100,32 +100,32 @@ const achievements = [
     description:
       '팀을 구성하여 웨일 확장앱 개발대회에 참가했습니다. <스톡인포>',
   },
-  // {
-  //   id: 5,
-  //   title: '알고리즘대회',
-  //   svg: acm,
-  //   description: '팀을 구성하여 ACM-ICPC 알고리즘 대회 참가했습니다.',
-  // },
-  // {
-  //   id: 6,
-  //   title: '한이음ICT공모전 입상',
-  //   svg: hanium,
-  //   description:
-  //     '한이음 ICT 공모전에 학회원이 팀을 꾸려 나가서 우수한 성적을 거뒀습니다.',
-  // },
-  // {
-  //   id: 7,
-  //   title: '구글클라우드 플랫폼 우승',
-  //   svg: gcp,
-  //   description: '구글 클라우드 플랫폼 해커톤 대회에서 우승을 했습니다.',
-  // },
-  // {
-  //   id: 8,
-  //   title: '학식 챗봇 개발',
-  //   svg: hufo,
-  //   description:
-  //     '카카오톡 플러스친구를 이용한 한국외대 학식 정보 제공뿐만 아니라 도서관 좌석정보도 제공합니다.<카톡 플친: 훕포메이션>',
-  // },
+  {
+    id: 5,
+    title: '알고리즘대회',
+    svg: acm,
+    description: '팀을 구성하여 ACM-ICPC 알고리즘 대회 참가했습니다.',
+  },
+  {
+    id: 6,
+    title: '한이음 입상',
+    svg: hanium,
+    description:
+      '한이음 ICT 공모전에 학회원이 팀을 꾸려 나가서 우수한 성적을 거뒀습니다.',
+  },
+  {
+    id: 7,
+    title: 'GCP 우승',
+    svg: gcp,
+    description: '구글 클라우드 플랫폼 해커톤 대회에서 우승을 했습니다.',
+  },
+  {
+    id: 8,
+    title: '학식 챗봇 개발',
+    svg: hufo,
+    description:
+      '카카오톡 플러스친구를 이용한 한국외대 학식 정보 제공뿐만 아니라 도서관 좌석정보도 제공합니다.<카톡 플친: 훕포메이션>',
+  },
 ];
 
 const MainHome = () => {
