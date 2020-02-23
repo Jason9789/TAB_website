@@ -201,7 +201,17 @@ const MainHome = () => {
       <PostHead>
         <h1>Apply</h1>
       </PostHead>
-      <MainHomeContent dangerouslySetInnerHTML={{ __html: '<p>지원</p>' }} />
+      <MainHomeContent
+        dangerouslySetInnerHTML={{
+          __html:
+            '<h2>지원 문의</h2>' +
+            '<p>학회장 : 컴전학부 19 박민주</p>' +
+            '<p>Phone : 010-9506-7170</p>' +
+            '<p>Kakao : supermanpan</p>' +
+            '<p>e-mail : supermp@hufs.ac.kr</p>' +
+            '<a href="https://www.naver.com"><b>👉 학회 지원서 링크📃</b></a>',
+        }}
+      />
     </MainHomeBlock>
   );
 };
