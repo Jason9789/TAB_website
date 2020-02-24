@@ -22,6 +22,9 @@ import acm from '../../images/acm.png';
 import gcp from '../../images/gcpug.png';
 import hanium from '../../images/hanium.png';
 import hufo from '../../images/huformation.png';
+import algorithm from '../../images/codefestival.png';
+import ksw from '../../images/ksw.png';
+import deep from '../../images/deeplearning.png';
 
 const MainHomeBlock = styled(Responsive)`
   margin-top: 4rem;
@@ -126,6 +129,26 @@ const achievements = [
     description:
       '카카오톡 플러스친구를 이용한 한국외대 학식 정보 제공뿐만 아니라 도서관 좌석정보도 제공합니다.<카톡 플친: 훕포메이션>',
   },
+  {
+    id: 9,
+    title: '코드 페스티벌',
+    svg: algorithm,
+    description: '교내 코드 페스티벌 알고리즘 대회에서 은상 수상을 하였습니다.',
+  },
+  {
+    id: 10,
+    title: 'k-sw square',
+    svg: ksw,
+    description:
+      'k-sw square 프로그램을 통해 Purdue University와 캡스톤 프로젝트를 진행합니다.',
+  },
+  {
+    id: 11,
+    title: '2nd DLCAT',
+    svg: deep,
+    description:
+      '대전에서 개최한 딥러닝 컨퍼런스에서 오디오 처리 부분 연사자로 발표하였습니다.',
+  },
 ];
 
 const MainHome = () => {
@@ -178,7 +201,17 @@ const MainHome = () => {
       <PostHead>
         <h1>Apply</h1>
       </PostHead>
-      <MainHomeContent dangerouslySetInnerHTML={{ __html: '<p>지원</p>' }} />
+      <MainHomeContent
+        dangerouslySetInnerHTML={{
+          __html:
+            '<h2>지원 문의</h2>' +
+            '<p>학회장 : 컴전학부 19 박민주</p>' +
+            '<p>Phone : 010-9506-7170</p>' +
+            '<p>Kakao : supermanpan</p>' +
+            '<p>e-mail : supermp@hufs.ac.kr</p>' +
+            '<a href="https://www.naver.com"><b>👉 학회 지원서 링크📃</b></a>',
+        }}
+      />
     </MainHomeBlock>
   );
 };
