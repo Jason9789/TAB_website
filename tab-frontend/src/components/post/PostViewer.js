@@ -43,7 +43,7 @@ const PostViewer = ({ post, error, loading, actionButtons, ownPost }) => {
   return (
     <PostViewerBlock>
       <Helmet>
-        <title>{title} - REACTERS</title>
+        <title>{title} - TAB</title>
       </Helmet>
 
       <PostHead>

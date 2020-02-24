@@ -68,14 +68,14 @@ const Header = ({ user, onLogout }) => {
                 <li>Home</li>
               </Link>
               <Link to="/">
-                <li>공지사항</li>
+                <li>자유 게시판</li>
               </Link>
-              <Link to="/session">
+              {/* <Link to="/session">
                 <li>학회 활동</li>
               </Link>
               <Link to="/">
                 <li>Q&A</li>
-              </Link>
+              </Link> */}
               <a href="/calendar">
                 <li>Calendar</li>
               </a>
