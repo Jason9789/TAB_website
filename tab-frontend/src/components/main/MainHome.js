@@ -151,7 +151,15 @@ const MainHome = () => {
       </Helmet>
       {/* About TAB */}
       <PostHead>
-        <h1>About TAB</h1>
+        <h1>
+          <span role="img" aria-label="people">
+            🤷‍♂
+          </span>{' '}
+          About TAB{' '}
+          <span role="img" aria-label="people">
+            🤷‍♀️
+          </span>
+        </h1>
       </PostHead>
       <MainHomeContent
         dangerouslySetInnerHTML={{
@@ -161,13 +169,19 @@ const MainHome = () => {
             '또한 Key Board 의 Tab 키 처럼 순간순간 자신을 한단계 도약시켜 나가자는데 의의가 있습니다. ' +
             '대학 4년의 정해진 기간동안 알찬시간을 보낼 수 있도록 실력있는 선배님이 진행하는 정기학회세미나와 프로젝트, 방학스터디등의 학술모임과 MT, 야유회 방중모임등의 친목모임이 이루어 지고 있습니다. ' +
             '더욱이 TAB 은 재학생뿐만아니라 졸업하신 선배님들과도 주기적인 모임을 가지면서 많은것을 보고 배울 수 있는 기회가 무한합니다. ' +
-            '알찬 대학생활을 보내시고 싶은 학우분들은 TAB을 두드려 주십시요. <br /><br /><br /><br />',
+            '알찬 대학생활을 보내시고 싶은 학우분들은 TAB을 두드려 주십시요. <br /><br />' +
+            '<a href="https://www.naver.com"><b>👉 학회 지원서 링크📃</b></a><br /><br /><br /><br />',
         }}
       />
 
       {/* 연간 행사 */}
       <PostHead>
-        <h1>Annul Event</h1>
+        <h1>
+          <span role="img" aria-label="event">
+            🥳
+          </span>{' '}
+          Annul Event
+        </h1>
       </PostHead>
       <MainHomeContent>
         <Contents id="annual_events" items={annual_events} />
@@ -179,7 +193,12 @@ const MainHome = () => {
 
       {/* 성과 */}
       <PostHead>
-        <h1>Achievements</h1>
+        <h1>
+          <span role="img" aria-label="achievement">
+            🎖
+          </span>{' '}
+          Achievements
+        </h1>
       </PostHead>
       <MainHomeContent>
         <Contents id="achievements" items={achievements} />
@@ -191,16 +210,21 @@ const MainHome = () => {
 
       {/* 지원 */}
       <PostHead>
-        <h1>Apply</h1>
+        <h1>
+          <span role="img" aria-label="apply">
+            📃
+          </span>{' '}
+          Apply
+        </h1>
       </PostHead>
       <MainHomeContent
         dangerouslySetInnerHTML={{
           __html:
             '<h2>지원 문의</h2>' +
-            '<p>학회장 : 컴전학부 19 박민주</p>' +
-            '<p>Phone : 010-9506-7170</p>' +
-            '<p>Kakao : supermanpan</p>' +
-            '<p>e-mail : supermp@hufs.ac.kr</p>' +
+            '<p><b>학회장</b> : 컴전학부 19 박민주</p>' +
+            '<p><b>Phone</b> : 010-9506-7170</p>' +
+            '<p><b>Kakao</b> : supermanpan</p>' +
+            '<p><b>e-mail</b> : supermp@hufs.ac.kr</p>' +
             '<a href="https://www.naver.com"><b>👉 학회 지원서 링크📃</b></a>',
         }}
       />
