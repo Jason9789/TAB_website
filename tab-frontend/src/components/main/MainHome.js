@@ -170,7 +170,7 @@ const MainHome = () => {
             '대학 4년의 정해진 기간동안 알찬시간을 보낼 수 있도록 실력있는 선배님이 진행하는 정기학회세미나와 프로젝트, 방학스터디등의 학술모임과 MT, 야유회 방중모임등의 친목모임이 이루어 지고 있습니다. ' +
             '더욱이 TAB 은 재학생뿐만아니라 졸업하신 선배님들과도 주기적인 모임을 가지면서 많은것을 보고 배울 수 있는 기회가 무한합니다. ' +
             '알찬 대학생활을 보내시고 싶은 학우분들은 TAB을 두드려 주십시요. <br /><br />' +
-            '<a href="https://www.naver.com"><b>👉 학회 지원서 링크📃</b></a><br /><br /><br /><br />',
+            '<a href="http://bit.ly/399HPR3"><b>👉 학회 지원서 링크📃</b></a><br /><br /><br /><br />',
         }}
       />
 
@@ -225,7 +225,7 @@ const MainHome = () => {
             '<p><b>Phone</b> : 010-9506-7170</p>' +
             '<p><b>Kakao</b> : supermanpan</p>' +
             '<p><b>e-mail</b> : supermp@hufs.ac.kr</p>' +
-            '<a href="https://www.naver.com"><b>👉 학회 지원서 링크📃</b></a>',
+            '<a href="http://bit.ly/399HPR3"><b>👉 학회 지원서 링크📃</b></a>',
         }}
       />
     </MainHomeBlock>
