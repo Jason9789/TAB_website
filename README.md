@@ -1,8 +1,8 @@
 # :mortar_board:한국외국어대학교 학회 TAB 홈페이지:mortar_board:
 
-# [![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)] [![Build](https://img.shields.io/badge/Build-Passing-success.svg)] [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react)
+# ![Version](https://img.shields.io/badge/Version-1.0.0-green.svg) ![Build](https://img.shields.io/badge/Build-Passing-success.svg) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react)
 
-### 참고 서적 : 리액트를 다루는 기술(김민준 지음), Node.js 교과서 (조현영 지음)
+- 참고 서적 : 리액트를 다루는 기술(김민준 지음), Node.js 교과서 (조현영 지음)
 
 ## 내용
 
