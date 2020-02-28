@@ -76,9 +76,9 @@ const Header = ({ user, onLogout }) => {
               <Link to="/">
                 <li>Q&A</li>
               </Link> */}
-              <a href="/calendar">
+              {/* <a href="/calendar">
                 <li>Calendar</li>
-              </a>
+              </a> */}
             </ul>
           </div>
           {/* </nav> */}
