@@ -25,5 +25,8 @@
   "scripts": {
     "start": "node -r esm src",
     "start:dev": "nodemon --watch src/ -r esm src/index.js"
+  },
+  "engines": {
+    "node": "12.14.0"
   }
 }
